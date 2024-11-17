@@ -38,6 +38,7 @@ function scripts() {
   .pipe(uglify())
   .pipe(dest('app/js'))
   .pipe(browserSync.stream())
+  .pipe(browserSync.reload({ stream: true }))
 }
 
 function images(){
@@ -90,5 +91,5 @@ exports.images      = images;
 exports.cleanDist   = cleanDist;
 exports.build       = series(cleanDist, images, build);
 
-exports.default = parallel(styles, scripts, browsersync, watching, images);
+exports.default = parallel(styles, scripts, browsersync, watching);
 
