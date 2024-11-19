@@ -17,28 +17,29 @@ function browsersync() {
 }
 
 
-function styles() {
-  return src('app/scss/style.scss')
-  .pipe(scss({outputStyle: 'compressed'}))
-  .pipe(concat('style.min.css'))
-  .pipe(autoprefixer({
-    overrideBrowserslist: ['last 10 versions'],
-    grid: true
-  }))
-  .pipe(dest('app/css'))
-  .pipe(browserSync.stream())
+function styles(done) {
+  src('app/scss/style.scss')
+    .pipe(scss({outputStyle: 'compressed'}))
+    .pipe(concat('style.min.css'))
+    .pipe(autoprefixer({
+      overrideBrowserslist: ['last 10 versions'],
+      grid: true
+    }))
+    .pipe(dest('app/css'))
+    .pipe(browserSync.stream());
+  done();
 }
 
 function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
+    'node_modules/slick-carousel/slick/slick.js',
     'app/js/main.js'
   ])
   .pipe(concat('main.min.js'))
   .pipe(uglify())
   .pipe(dest('app/js'))
   .pipe(browserSync.stream())
-  .pipe(browserSync.reload({ stream: true }))
 }
 
 function images(){
