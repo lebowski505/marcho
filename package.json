@@ -9,6 +9,7 @@
   "author": "Dimas",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "autoprefixer": "^9.0.1",
     "browser-sync": "^3.0.3",
     "del": "^6.1.1",
