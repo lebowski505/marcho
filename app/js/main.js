@@ -9,5 +9,11 @@ $(function(){
     autoplaySpeed: 2000
   });
   
+  $(".star").rateYo({
+    starWidth: "17px",
+    normalFill: "#ccccce",
+    rateFill: "#E74C3C",
+    readOnly: true
+  })
 
 });
