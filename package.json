@@ -27,8 +27,13 @@
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^11.0.1",
     "jquery": "^3.7.1",
+    "jquery-form-styler": "^2.0.2",
     "rateyo": "^2.3.2",
     "sass": "^1.80.7",
     "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {
+    "nouislider": "^15.8.1",
+    "rangeslider.js": "^2.3.3"
   }
 }
