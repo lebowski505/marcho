@@ -1162,6 +1162,51 @@ footer {
   }
 }
 
+.product-page {
+  padding: 120px 0 60px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.product-one {
+  &__inner {
+    display: flex;
+  }
+  &__slide {
+    width: 730px;
+    margin-right: 70px;
+  }
+  &__content {
+    width: 370px;
+  }
+}
+
+.product-slide {
+  display: flex;
+  &__thumb {
+    width: 140px;
+    height: 550px; 
+    margin-right: 30px;
+  }
+  &__thumb-item {
+    margin-bottom: 21px;
+    width: 140px;
+    height: 140px;
+    img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+    }
+  }
+  &__big {
+    width: 560px;
+    img {
+      width: 560px;
+      height: 650px;
+      object-fit: cover;
+    }
+  }
+}
+
 
 
 
