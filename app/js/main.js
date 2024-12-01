@@ -28,7 +28,7 @@ $(function () {
     $('.product-item').removeClass('product-item--list');
   });
 
-  $('.select-style').styler();
+  $('.select-style, .product-one__num').styler();
 
   var slider = document.querySelector('.filter-price__slider'); 
   var tooltip = document.getElementById('tooltip');
