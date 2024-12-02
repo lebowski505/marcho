@@ -6,16 +6,6 @@ $(function () {
     infinite: false,
   });
 
-  Fancybox.bind("[data-fancybox='gallery']", {
-    Thumbs: {
-      autoStart: true,
-    },
-    Toolbar: {
-      display: ['zoom', 'close'],
-    },
-    infinite: true,
-  });
-
   $('.product-tabs__top-item').on('click', function(e){
     e.preventDefault();
     $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');

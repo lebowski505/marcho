@@ -1676,6 +1676,92 @@ footer {
   }
 }
 
+.person {
+  border: 1px solid #ececec;
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 40px 25px;
+  &__img {
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin: 0 auto 35px;
+  }
+  &__name {
+    color: $title;
+    font-size: 18px;
+    @extend %roboto-700;
+  }
+  &__position {
+    color: $accent;
+    margin-bottom: 25px;
+  }
+  &__text {
+    margin-bottom: 30px;
+  }
+  &__social-link {
+    margin: 0 8px;
+    path {
+      fill: $default;
+      transition: all .3s;
+      &:hover {
+        fill: $accent;
+      }
+    }
+  }
+}
+
+.latest-posts {
+  padding: 35px 30px 40px;
+  border: 1px solid #ececec;
+  margin-bottom: 40px;
+  &__title {
+    color: $title;
+    text-transform: uppercase;
+    @extend %roboto-400;
+    font-size: 22px;
+    margin-bottom: 35px;
+  }
+  &__item {
+    margin-bottom: 20px;
+    display: flex;
+    & + .latest-posts__item {
+      border-top: 1px solid #ececec;
+      padding-top: 20px;
+    }
+  }
+  &__img-link {
+    margin-right: 20px;
+    display: block;
+    min-width: 80px;
+  }
+  &__img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+  &__box-link {
+    @extend %roboto-400;
+    font-size: 18px;
+    color: $title;
+    line-height: 28px;
+  }
+  &__date {
+    padding-left: 26px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 5px;
+      background-image: url('../images/icons/calendar.svg');
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
 
 
 
