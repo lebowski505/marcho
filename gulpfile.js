@@ -18,7 +18,9 @@ function browsersync() {
 
 
 function styles(done) {
-  src('app/scss/style.scss')
+  src([
+    'app/scss/style.scss'
+  ])
     .pipe(scss({outputStyle: 'compressed'}))
     .pipe(concat('style.min.css'))
     .pipe(autoprefixer({
