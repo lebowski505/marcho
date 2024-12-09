@@ -57,3 +57,29 @@
     align-items: center;
   }
 }
+
+@media (max-width:620px) { 
+  .promo {
+    padding: 60px 0;
+    &__clock {
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 35px;
+    }
+    &__clock-item {
+      margin: 20px 35px;
+    }
+  }
+}
+
+@media (max-width:450px) { 
+  .promo {
+    padding: 40px 0;
+    &__clock {
+      margin-top: 30px;
+    }
+    &__clock-item {
+      margin: 8px;
+    }
+  }
+}
